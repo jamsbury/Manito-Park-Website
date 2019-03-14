@@ -1,0 +1,188 @@
+.button_container {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  z-index: 5;
+  transition: opacity 0.25s ease;
+}
+.button_container:hover {
+  opacity: 0.7;
+}
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+          transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #fff;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #fff;
+}
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #fff;
+}
+.button_container span {
+  background: #ff5252;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 8px;
+}
+.button_container span:nth-of-type(3) {
+  top: 16px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  z-index: 4;
+  font-weight: bold;
+}
+.overlay.open {
+  opacity: 0.9;
+  visibility: visible;
+  height: 100vh;
+}
+
+.overlay.open li {
+  -webkit-animation: fadeInRight 0.25s ease forwards;
+          animation: fadeInRight 0.25s ease forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  margin-bottom: .75em;
+}
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: 0.30s;
+          animation-delay: 0.30s;
+}
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+.overlay.open li:nth-of-type(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.overlay.open li:nth-of-type(6) {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(7) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.overlay.open li:nth-of-type(8) {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.overlay nav {
+  position: relative;
+  height: 80vh;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  max-width: 75%;
+  display: block;
+  margin: 0.25em auto;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.overlay ul li a:hover {
+  color: #ddd;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  transition: 0.35s;
+}
+
+.overlay-menu ul li a img {
+  width: 70%;
+}
+
+.overlay-menu ul li a:nth-of-type(1) {
+  height: auto;
+  padding-bottom: 0.25em;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .button_container {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  z-index: 5;
+  transition: opacity 0.25s ease;
+}
+}

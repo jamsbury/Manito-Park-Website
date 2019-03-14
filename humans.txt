@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Justice Amsbury
+
+# THANKS
+
+    spokanehistorical.org for much of the historical information present on the website.
+    
+    the City of Spokane and all of the people who work hard to preserve this beautiful park.
+    
+    My professor Breanna White (@typebee) for helping me through the challenges of creating a brand identity. 
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

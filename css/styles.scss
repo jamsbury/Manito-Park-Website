@@ -1,0 +1,666 @@
+// importing HTML/CSS fixes
+@import "fixes";
+// importing normalize
+@import "normalize";
+// nav functionality
+@import "nav";
+// animate.css
+@import "animate";
+// uikit framework
+@import "uikit.min";
+// bench styles
+@import "gardens";
+// styles below
+
+$main-color: #8f3e8d;
+$bodycopy: Adobe Garamond Pro, Garamond, Perpetua, serif;
+$headercopy: Perpetua, serif;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  background-color: $main-color;
+  font-family: $bodycopy;
+  font-size: 16pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Perpetua, serif;
+  font-weight: bold;
+  color: #000;
+  line-height: 1em;
+  text-align: center;
+}
+
+p {
+  font-family: $bodycopy;
+  line-height: 19pt;
+  font-size: 16pt;
+  margin: auto;
+  margin-bottom: 1.5em;
+  padding: 0;
+  display: inline-block;
+}
+
+td {
+  font-family: $bodycopy;
+  line-height: 19pt;
+  font-size: 14pt;
+  margin: auto;
+  padding: 0;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+.uk-button {
+  font-family: $headercopy;
+  border-radius: 0.5em;
+}
+
+h1 {
+  line-height: 1em;
+  text-align: center;
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+header {
+  display: block;
+  background-image: url("../img/destination-poster.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: center;
+  background-position-x: left;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+header img#discovertype {
+  position: absolute;
+  width: 45%;
+  left: 50%;
+  margin-left: -22.5%;
+  bottom: 6.5%;
+}
+
+header img#typeback,
+#logoback {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  margin-left: -40%;
+  bottom: -0.1%;
+}
+
+header img#arrow {
+  position: absolute;
+  width: 6%;
+  left: 50%;
+  margin-left: -3%;
+  bottom: 2%;
+}
+
+section {
+  margin: auto;
+  width: 85%;
+}
+
+section.intro {
+  margin: auto;
+  padding: 0;
+}
+
+p.byline {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  font-size: 1.25em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+section.intro:last-child {
+  margin-bottom: 3em;
+}
+
+section.intro {
+  margin: auto;
+  padding: 0;
+  margin-bottom: 3em;
+}
+
+section.map {
+  padding: 1em;
+  margin: auto;
+  margin-top: 2em;
+}
+
+section.fom {
+  margin: auto;
+  margin-top: 2em;
+}
+
+section.fom .uk-button {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+  font-size: 16pt;
+  color: #fff;
+  background-color: $main-color;
+  height: 3em;
+  width: 50%;
+  margin: 1em auto;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+section.map iframe {
+  display: block;
+  border: none;
+  margin: auto;
+  width: 100%;
+  height: 65vh;
+  max-height: 800px;
+}
+
+section.gardengrid {
+  margin-top: 4em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+section.gardengrid > div {
+  grid-column: span 2;
+}
+
+div.garden {
+  position: relative;
+}
+
+img.logo {
+  position: absolute;
+  width: 15%;
+  left: 50%;
+  margin-left: -7.5%;
+  bottom: 1%;
+}
+
+div.ferris div.garden img.logo {
+  position: absolute;
+  width: 13%;
+  left: 50%;
+  margin-left: -6.5%;
+  bottom: 1%;
+}
+
+img.lazy {
+  width: 100%;
+}
+
+section.gardengrid h3 {
+  display: block;
+  margin: 0.5em auto;
+  width: 80%;
+}
+
+section.gardengrid h4 {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+#logoback {
+  width: 35%;
+  margin-left: -17.5%;
+  bottom: -0.5%;
+}
+
+#wavetop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+section.gardengrid > div {
+  margin-bottom: 3.5em;
+}
+
+section.gardengrid .uk-button,
+section.bench .uk-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: $main-color;
+  height: 3em;
+  width: 50%;
+  margin: 1em auto;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+section.gardengrid .uk-button:hover,
+section.bench .uk-button:hover {
+  opacity: 0.7;
+  width: 70%;
+}
+
+div.duncan .uk-button {
+  color: #fff;
+  background-color: #00aeef;
+}
+
+div.gaiser .uk-button {
+  color: #fff;
+  background-color: #00a850;
+}
+
+div.rose .uk-button {
+  color: #fff;
+  background-color: #ee202e;
+}
+
+div.mirror .uk-button {
+  color: #fff;
+  background-color: #f57e25;
+}
+
+div.japanese .uk-button {
+  color: #fff;
+  background-color: #e991a7;
+}
+
+div.lilac .uk-button {
+  color: #fff;
+  background-color: #bb89c9;
+}
+
+div.ferris .uk-button {
+  color: #fff;
+  background-color: #efad00;
+}
+
+section.bench {
+  width: 100%;
+  position: relative;
+  padding: 2em 0 3em 0;
+}
+
+section.bench p {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+section.bench .uk-button {
+  color: #fff;
+  background-color: $main-color;
+  margin: 2.5em auto;
+}
+
+section.bench img {
+  display: block;
+  width: 60%;
+  margin: auto auto 1.5em auto;
+}
+
+section.bench table {
+  margin: 2em auto;
+  width: 80%;
+}
+
+section.bench table tr {
+  height: 3em;
+}
+
+section.bench table tr:nth-of-type(2) {
+  border-top: 2px solid #aaa;
+}
+
+section.bench table tr td:nth-of-type(1) {
+  border-left: none;
+  padding-right: 0.25em;
+}
+
+section.bench table tr td {
+  padding-left: 0.25em;
+  border-left: 2px solid #aaa;
+}
+
+footer {
+  background-color: $main-color;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 2em;
+}
+
+footer > div > section {
+  width: 80%;
+  text-align: left;
+  grid-column: span 2;
+}
+
+footer h4 {
+  color: #fff;
+  font-family: $headercopy;
+  text-align: left;
+  font-size: 18pt;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+section.legal a,
+section.legal p {
+  display: inline;
+}
+
+footer p,
+footer a {
+  color: #fff;
+  font-size: 14pt;
+  font-family: $bodycopy;
+  display: block;
+  transition-duration: 0.3s;
+  padding: 0.25em 0 0.25em 0;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #bbb;
+}
+
+section.legal img {
+  width: 60%;
+  margin: 4em auto 2em auto;
+  display: block;
+}
+
+section.legal {
+  margin-top: 1em;
+  margin: auto;
+  text-align: center;
+  align-self: start;
+  grid-column: span 2;
+}
+
+// -- FUN WITH MEDIA QUERIES -- //
+
+// PHONE
+
+@media screen and (min-width: 600px) {
+  section.intro,
+  section.map,
+  section.fom,
+  section.bench p,
+  section.bench table {
+    width: 70%;
+  }
+  footer > div > section {
+    width: 80%;
+    text-align: left;
+    grid-column: span 2;
+    height: 100%;
+  }
+  section.legal img {
+    width: 45%;
+  }
+  section.gardengrid h4 {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 700px) {
+  footer div {
+    width: 60%;
+    margin: auto;
+  }
+  footer > div > section {
+    grid-column: span 1;
+    align-self: start;
+    height: 100%;
+  }
+}
+// TABLET
+
+@media screen and (min-width: 1000px) {
+  section.intro,
+  section.map,
+  section.fom,
+  section.bench p,
+  section.bench table {
+    width: 55%;
+  }
+  section.map {
+    width: 65%;
+  }
+  section.gardengrid {
+  }
+  footer > section {
+    grid-column: span 1;
+    align-self: start;
+    height: 100%;
+  }
+  section.legal img {
+    width: 40%;
+  }
+  section.gardengrid h4 {
+    width: 65%;
+  }
+  section.bench img {
+    width: 35%;
+  }
+  section.gardengrid .uk-button:hover,
+  section.bench .uk-button:hover {
+    opacity: 0.7;
+    width: 40%;
+  }
+  section.gardengrid .uk-button,
+  section.bench .uk-button {
+    width: 30%;
+  }
+
+  section.map iframe {
+    display: block;
+    border: none;
+    margin: auto;
+    width: 100%;
+    height: 75vh;
+    max-height: 1100px;
+  }
+
+  // HEADER MODIFICATIONS
+
+  header img#discovertype {
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    margin-left: -15%;
+    bottom: 6.5%;
+  }
+
+  header img#typeback,
+  #logoback {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    bottom: -0.1%;
+  }
+
+  header img#arrow {
+    position: absolute;
+    width: 3%;
+    left: 50%;
+    margin-left: -1.5%;
+    bottom: 2%;
+  }
+
+  // LOGO BANNER ADJUSTMENTS
+
+  img.logo {
+    position: absolute;
+    width: 10%;
+    left: 50%;
+    margin-left: -5%;
+    bottom: 1%;
+  }
+  #logoback {
+    width: 25%;
+    margin-left: -12.5%;
+    bottom: -0.5%;
+  }
+
+  div.ferris div.garden img.logo {
+    position: absolute;
+    width: 9%;
+    left: 50%;
+    margin-left: -4.5%;
+    bottom: 1%;
+  }
+  section.gardengrid h3 {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  section.intro,
+  section.map,
+  section.fom,
+  section.bench p,
+  section.bench table {
+    width: 45%;
+  }
+  section.map {
+    width: 65%;
+  }
+  section.gardengrid {
+    width: 90%;
+  }
+  section.gardengrid > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-bottom: 2em;
+  }
+  section.gardengrid > div > div {
+    grid-column: span 1;
+    align-self: center;
+  }
+
+  section.legal img {
+    width: 25%;
+  }
+  section.gardengrid h4 {
+    width: 90%;
+  }
+  section.bench img {
+    width: 35%;
+  }
+  section.gardengrid .uk-button:hover,
+  section.bench .uk-button:hover {
+    opacity: 0.7;
+    width: 40%;
+  }
+  section.gardengrid .uk-button,
+  section.bench .uk-button {
+    width: 30%;
+  }
+  // HEADER MODIFICATIONS
+
+  header img#discovertype {
+    position: absolute;
+    width: 25%;
+    left: 50%;
+    margin-left: -12.5%;
+    bottom: 6.5%;
+  }
+
+  header img#typeback {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    margin-left: -20%;
+    bottom: -0.1%;
+  }
+
+  header img#arrow {
+    position: absolute;
+    width: 2%;
+    left: 50%;
+    margin-left: -1%;
+    bottom: 2%;
+  }
+
+  // LOGO BANNER ADJUSTMENTS
+
+  img.logo {
+    position: absolute;
+    width: 9%;
+    left: 96.5%;
+    bottom: 43%;
+  }
+  #logoback {
+    width: 22%;
+    left: 96%;
+    bottom: 40%;
+    transform: rotateZ(-90deg);
+  }
+
+  div.ferris div.garden img.logo {
+    position: absolute;
+    width: 7%;
+    left: 96%;
+    bottom: 43%;
+  }
+  section.gardengrid h3 {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+
+  p {
+    max-width: 50em;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+}

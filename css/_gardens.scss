@@ -1,0 +1,264 @@
+section.intro-garden {
+  margin: auto;
+  padding: 0;
+  p {
+    margin-bottom: 1.5em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  table {
+    margin: 2em auto;
+    width: 100%;
+  }
+
+  table tr {
+    height: 3em;
+  }
+
+  table td {
+    padding: 0.5em;
+  }
+
+  table tr {
+    border-top: 2px solid #aaa;
+  }
+
+  table tr:nth-of-type(1) {
+    border-top: none;
+    font-weight: bold;
+  }
+
+  table tr td:nth-of-type(1) {
+    border-left: none;
+    padding-right: 0.25em;
+  }
+  img {
+    margin: 2em auto;
+  }
+}
+
+section.intro-garden:last-child {
+  margin-bottom: 3em;
+}
+
+header img#back {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  z-index: 5;
+  transition: opacity 0.25s ease;
+}
+
+header img#back:hover {
+  opacity: 0.7;
+}
+
+header#bmenu {
+  display: block;
+  background-image: none;
+  background-color: #FF9592;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 50vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+#benchhead {
+  position: absolute;
+  margin: auto;
+  width: 75%;
+  left: 50%;
+  top: 20%;
+  margin-left: -37.5%;
+}
+
+ul.bench-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+header#duncan {
+  display: block;
+  background-image: url("../img/gardens/duncanheader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+header#gaiser {
+  display: block;
+  background-image: url("../img/gardens/gaiser-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+header#rose {
+  display: block;
+  background-image: url("../img/gardens/rose-hill.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+header#mirror {
+  display: block;
+  background-image: url("../img/gardens/mirror-pond.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+header#japanese {
+  display: block;
+  background-image: url("../img/gardens/japanese-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+header#lilac {
+  display: block;
+  background-image: url("../img/gardens/lilac-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+header#ferris {
+  display: block;
+  background-image: url("../img/gardens/ferris-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  height: 70vh;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+br {
+  margin-bottom: 1em;
+}
+
+header img#gardenhead {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  margin-left: -15%;
+  bottom: 1%;
+  z-index: 2;
+}
+
+header#ferris img#gardenhead {
+  position: absolute;
+  width: 20%;
+  left: 50%;
+  margin-left: -10%;
+  bottom: 1%;
+  z-index: 2;
+}
+
+header img#headlogoback {
+  position: absolute;
+  width: 65%;
+  left: 50%;
+  margin-left: -32.5%;
+  bottom: -0.5%;
+  z-index: 1;
+}
+
+@media screen and (min-width: 700px) {
+  header img#gardenhead {
+    width: 20%;
+    margin-left: -10%;
+  }
+  header img#headlogoback {
+    width: 50%;
+    margin-left: -25%;
+  }
+  header#ferris img#gardenhead {
+    position: absolute;
+    width: 16%;
+    left: 50%;
+    margin-left: -8%;
+    bottom: 1%;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header img#gardenhead {
+    width: 15%;
+    margin-left: -7.5%;
+  }
+  header img#headlogoback {
+    width: 40%;
+    margin-left: -20%;
+  }
+  header#ferris img#gardenhead {
+    position: absolute;
+    width: 14%;
+    left: 50%;
+    margin-left: -7%;
+    bottom: 1%;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header img#gardenhead {
+    width: 12%;
+    margin-left: -6%;
+  }
+  header img#headlogoback {
+    width: 26%;
+    margin-left: -13%;
+  }
+  header#ferris img#gardenhead {
+    position: absolute;
+    width: 8%;
+    left: 50%;
+    margin-left: -4%;
+    bottom: 1%;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+}
+
+@media screen and (min-width: 2400px) {
+}
